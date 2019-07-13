@@ -12,7 +12,7 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #000;
+  background: #fff;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -71,7 +71,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  background: #373737;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -85,7 +85,7 @@
 }
 
 .menu-branding {
-  background: #fff;
+  background: #444;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-out;
@@ -102,7 +102,7 @@
   height: 250px;
   background: url(../img/portrait.jpg);
   border-radius: 50%;
-  border: solid 3px #66c2ff;
+  border: solid 3px #eece1a;
 }
 
 .menu .nav-item {
@@ -118,7 +118,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #66c2ff;
+  color: #eece1a;
 }
 
 .menu .nav-link {
@@ -128,14 +128,14 @@
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .menu .nav-link:hover {
-  color: #66c2ff;
+  color: #eece1a;
 }
 
 .nav-item:nth-child(1) {
@@ -164,8 +164,8 @@
 }
 
 body {
-  background: #fff;
-  color: #000;
+  background: #444;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -185,7 +185,7 @@ body#bg-img:after {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(68, 68, 68, 0.9);
   z-index: -1;
 }
 
@@ -201,7 +201,7 @@ h1.lg-heading, h2.lg-heading, h3.lg-heading {
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(73, 73, 73, 0.5);
 }
 
 a {
@@ -216,7 +216,7 @@ header {
 }
 
 .text-secondary {
-  color: #66c2ff;
+  color: #eece1a;
 }
 
 main {
@@ -233,7 +233,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #66c2ff;
+  color: #eece1a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -261,7 +261,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #66c2ff 3px solid;
+  border: #eece1a 3px solid;
 }
 
 .about-info .bio {
@@ -291,9 +291,9 @@ main#home h1 {
 }
 
 .about-info .job {
-  background: white;
+  background: #515151;
   padding: 0.5rem;
-  border-bottom: #66c2ff 5px solid;
+  border-bottom: #eece1a 5px solid;
 }
 
 .projects {
@@ -311,7 +311,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: #66c2ff;
+  border-color: #eece1a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -342,7 +342,7 @@ main#home h1 {
 
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #66c2ff;
+  background: #eece1a;
   color: #000;
 }
 
@@ -358,25 +358,25 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #66c2ff;
+  background: #eece1a;
   color: #000;
 }
 
 .btn-dark {
-  background: gray;
+  background: black;
   color: #fff;
 }
 
 .btn-light {
-  background: white;
+  background: #c4c4c4;
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #e6e6e6;
-  color: #000;
+  background: #2b2b2b;
+  color: #fff;
   height: 60px;
 }
 
@@ -405,14 +405,12 @@ main#home h1 {
     line-height: 1;
     margin-bottom: 1rem;
   }
-  ul.menu-nav,
-  div.menu-branding {
+  ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
   }
-  ul.menu-nav.show,
-  div.menu-branding.show {
+  ul.menu-nav.show, div.menu-branding.show {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
@@ -443,7 +441,7 @@ main#home h1 {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
   }
@@ -451,18 +449,5 @@ main#home h1 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  main#contact h1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    font-size: 3.5rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
+/*# sourceMappingURL=main.css.map */
